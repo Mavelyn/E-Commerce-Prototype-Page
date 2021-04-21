@@ -2,7 +2,7 @@
 Interview Submission for Darwynn - created using Vue 3, HTML, CSS, and Element Plus.
 Follow the steps below to run the program. 
 
-<img src="./screenshots/website_prototype_v2.jpg" width="700">
+<img src="./screenshots/website_prototype.jpg" width="700">
 
 ## Project setup
 ```
