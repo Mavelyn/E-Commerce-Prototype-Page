@@ -1,5 +1,5 @@
-# darwynn
-Interview Submission for Darwynn - created using Vue 3, HTML, CSS, and Element Plus.
+# E-Commerce Prototype Page
+Interview Submission for Darwynn Ltd. - created using Vue 3, HTML, CSS, and Element Plus.
 Follow the steps below to run the program. 
 
 <img src="./screenshots/website_prototype.jpg" width="700">
