@@ -1,7 +1,7 @@
 <template>
   <el-input placeholder="Search" v-model="input" class="search_bar">
     <template #prepend>
-      <el-select placeholder="All" v-model="select" class="input-with-select">
+      <el-select placeholder="Select" v-model="select" class="input-with-select">
         <el-option
           v-for="item in options"
           :key="item.value"
@@ -9,7 +9,6 @@
           :value="item.value"
         >
         </el-option>
-        <!-- <el-option label="Electronics" value="1"></el-option> -->
       </el-select>
     </template>
     <template #append>
@@ -21,48 +20,49 @@
 <script>
 import { defineComponent, ref } from "vue";
 export default defineComponent({
-  data() {
+  // data() {
+  //   return {
+  //   };
+  // },
+  setup() {
     return {
+      
       options: [
         {
-          value: "All",
+          value: "1",
           label: "All",
         },
         {
-          value: "Bestsellers",
+          value: "2",
           label: "Bestsellers",
         },
         {
-          value: "New",
+          value: "3",
           label: "New",
         },
         {
-          value: "Electronics",
+          value: "4",
           label: "Electronics",
         },
         {
-          value: "Home",
+          value: "5",
           label: "Home",
         },
         {
-          value: "Fashion",
+          value: "6",
           label: "Fashion",
         },
         {
-          value: "Grocery",
+          value: "7",
           label: "Grocery",
         },
         {
-          value: "Health",
+          value: "8",
           label: "Health",
         }
       ],
-    };
-  },
-  setup() {
-    return {
-      input: ref(""),
-      select: ref(""),
+      input: ref(''),
+      select: ref(''),
     };
   },
 });
@@ -72,5 +72,8 @@ export default defineComponent({
 .search_bar {
   align-self: center;
   flex-grow: 2;
+}
+.input-with-select {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 </style>

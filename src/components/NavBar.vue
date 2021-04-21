@@ -43,10 +43,10 @@ export default {
     font-weight: bold;
     font-size: 24px;
     align-items: center;
-    padding-left: 120px;
+    padding-left: 100px;
 }
 
 .el-menu-item {
-    color: black;
+    color: rgb(94, 94, 94);
 }
 </style>

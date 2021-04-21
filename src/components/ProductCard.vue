@@ -29,8 +29,9 @@ export default {
 <style scoped>
 .bottom {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .image {

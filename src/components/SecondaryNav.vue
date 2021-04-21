@@ -6,7 +6,8 @@
     active-text-color="black"
   >
     <el-menu-item @click="drawer = true" index="1">All</el-menu-item>
-        <el-drawer v-model="drawer" direction="ltr" title="Welcome!">
+        <el-drawer v-model="drawer" direction="ltr" title="Welcome!" size="20%">
+          <p class="drawer-item" v-for="category in categories" :key="category">{{category}}</p>
         </el-drawer>
     <el-menu-item index="2">Bestsellers</el-menu-item>
     <el-menu-item index="3">New</el-menu-item>
@@ -26,7 +27,17 @@ export default {
   name: "SecondaryNav",
   data() {
       return {
-          drawer: false
+          drawer: false,
+          categories: [
+            "Trending",
+            "Bestsellers",
+            "New Releases",
+            "Electronics",
+            "Home",
+            "Fashion",
+            "Grocery",
+            "Health"
+          ]
       }
   }
 };
@@ -46,4 +57,9 @@ export default {
   background-color: rgb(0, 31, 131);
   color: white;
 }
+.drawer-item {
+  color: rgb(94, 94, 94);
+  margin-left: 50px;
+}
+
 </style>
